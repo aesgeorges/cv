@@ -1,8 +1,8 @@
 #set page(
     paper: "us-letter",
     margin: (
-      top: 0.25cm,
-      bottom: 3cm, 
+      top: 0.9cm,
+      bottom: 1cm, 
       x: .75cm,
     )
   )
@@ -33,8 +33,8 @@
 
 #let perso(contents) = {
   for entry in contents{
-    [=== #text(entry.degree)]
-    [ #text(weight: "bold", entry.institution) #h(1fr) #text(entry.duration)]
+    [=== #text(entry.degree) #h(1fr) #text(entry.duration)]
+    [ #text(weight: "bold", entry.institution) ]
     if entry.details.advisor != "" {
       [\ Advisor: #text(entry.details.advisor)]
     }
@@ -77,8 +77,8 @@
 
 #let conferences(contents) = {
   for entry in contents {
-    [#text(weight: "bold", entry.name) | #text(entry.type) #h(1fr) #text(entry.date)]
-    [\ #emph(entry.location)]
+    [#text(weight: "bold", entry.name) #h(1fr) #text(weight: "bold", entry.date)]
+    [\ #text(entry.type) #h(1fr) #text(entry.location)]
     [\ #text(entry.title)]
     [\ ]
     [\ ]
@@ -91,48 +91,142 @@
 
 = Professional Experience
 #line(length: 100%)
-#lorem(50)
+
+#let prof_experience(contents) = {
+  for entry in contents {
+    [#text(weight: "bold", entry.position) #h(1fr) #text(weight: "bold", entry.date)]
+    [\ #text(entry.institution) #h(1fr) #text(entry.location)]
+    [\ Supervisor: #emph(entry.supervisors)]
+    for detail in entry.responsibilities {
+      [\ • #text(detail)]
+    }
+    [\ ]
+    [\ ]
+  }
+}
+
+
+#prof_experience(
+  yaml("perso.yaml").professional_experience
+)
 
 = Research Experience
 #line(length: 100%)
-#lorem(150)
 
+#let research_experience(contents) = {
+  for entry in contents {
+    [#text(weight: "bold", entry.position) #h(1fr) #text(weight: "bold", entry.date)]
+    [\ #text(entry.institution) #h(1fr) #text(entry.location)]
+    [\ Supervisor: #emph(entry.supervisors)]
+    for detail in entry.responsibilities {
+      [\ • #text(detail)]
+    }
+    [\ ]
+    [\ ]
+  }
+}
+
+#research_experience(
+  yaml("perso.yaml").research_experience
+)
 = Teaching Experience
 #line(length: 100%)
-#lorem(60)
+
+#let teaching_experience(contents) = {
+  for entry in contents {
+    [#text(weight: "bold", entry.position) | #text(entry.course) #h(1fr) #text(weight:"bold", entry.date)]
+    [\ #text(entry.institution)]
+    [\ #text(entry.responsibilities)]
+    [\ ]
+    [\ ]
+  }
+}
+
+#teaching_experience(
+  yaml("perso.yaml").teaching_experience
+)
 
 = Technical Skills 
 #line(length: 100%)
-#lorem(60)
+
+#let skills(contents) = {
+  let code_entries = ""
+  let model_entries = ""
+  for entry in contents.programming {
+    code_entries = code_entries + "\n " + entry
+  }
+  for entry in contents.modeling {
+    model_entries = model_entries + "\n " + entry
+  }
+
+  columns(2, gutter: 0.2cm)[
+    #text(weight: "bold", "Programming & Software") 
+    #text(code_entries)
+    
+    #colbreak()
+    
+    #text(weight: "bold", "Hydrodynamic & Environmental Modeling") 
+    #text(model_entries)
+  ]
+}
+
+#skills(
+  yaml("perso.yaml").technical_skills
+)
+
+= Certifications and Professional Development
+#line(length: 100%)
+
+#let certifications(contents) = {
+
+}
+
+#certifications(
+  yaml("perso.yaml").certifications
+)
 
 = Awards and Honors
 #line(length: 100%)
-#lorem(30)
+
+#let awards(contents) = {
+
+}
+
+#awards(
+  yaml("perso.yaml").awards_and_honors
+)
 
 = Service and Leadership
 #line(length: 100%)
-#lorem(60)
+
+#let leadership(contents) = {
+
+}
+
+#leadership(
+  yaml("perso.yaml").service_and_leadership
+)
 
 = Languages
 #line(length: 100%)
-#lorem(10)
 
+#let languages(contents) = {
+  for entry in contents {
+    [#text(weight: "bold", "Native/Bilingual: ")]
+    for language in entry.native {
+      [#text(language) ]
+    }
+    [| #text(weight: "bold", "Fluent: ")]
+    for language in entry.fluent {
+      [#text(language) ]
+    }
+    [| #text(weight: "bold", "Basic: ")]
+    for language in entry.basic {
+      [#text(language) ]
+    }
+  }
+}
 
-
-/*
-=== Ph.D. in Civil and Environmental Engineering
-#text(weight: "bold", "University of California, Berkeley")
-#h(1fr) January 2021 - December 2025 \
-Advisor: Prof Mark T. Stacey \
-Dissertation: Remote Sensing and Hydrodynamic Modeling of Mangrove-Storm Surge Interactions in Haiti.
-
-=== M.S. in Civil and Environmental Engineering
-#text(weight: "bold", "University of California, Berkeley")
-#h(1fr) August 2020 - December 2021 \
-Specialization: Environmental Fluid Mechanics and Hydrology.
-
-=== B.E. in Civil Engineering
-#text(weight: "bold", "Stony Brook University, State University of New York")
-#h(1fr) August 2016 - May 2020 \
-Specialization: Water Resources and Environmental Engineering.
-*/
+#languages(
+  yaml("perso.yaml").languages
+)
