@@ -1,0 +1,81 @@
+identity:
+  name: Alexandre Erich Sébastien Georges, Ph.D.
+  title: Engineer, Water Resources
+  affiliation: California Department of Water Resources
+  email1: Alexandre.Georges@water.ca.gov
+  email2: aes.georges@gmail.com
+  phone: (631) 590-0387
+
+education:
+  - degree: Ph.D. in Civil and Environmental Engineering
+    institution: University of California, Berkeley
+    duration: January 2021 - December 2025
+    details:
+      advisor: Prof Mark T. Stacey
+      dissertation: Remote Sensing and Hydrodynamic Modeling of Mangrove-Storm Surge Interactions in Haiti.
+      specialization: ""
+  - degree: M.S. in Civil and Environmental Engineering
+    institution: University of California, Berkeley
+    duration: August 2020 - December 2021
+    details:
+      specialization: Environmental Fluid Mechanics and Hydrology.
+      advisor: ""
+      dissertation: ""
+  - degree: B.E. in Civil Engineering
+    institution: Stony Brook University, State University of New York
+    duration: August 2016 - May 2020
+    details:
+      specialization: Water Resources and Environmental Engineering.
+      advisor: ""
+      dissertation: ""
+
+publications:
+  - doi:
+    type: Journal Article
+    status: (In Preparation)
+    title: Spatio-Temporal Change in Mangrove Health and Storm Surge Attenuation Impact in Grand-Pierre Bay, Haiti.
+    authors:
+      - name: Georges, A.
+        affiliation: "1"
+      - name: Stacey, M.
+        affiliation: "1"
+      - name: Ramsewak, D.
+        affiliation: "2"
+    affiliations:
+      - order: "1"
+        institution: University of California, Berkeley
+      - order: "2"
+        institution: University of Trinidad and Tobago
+
+conference_presentations:
+ # add the coding workshop?
+  - name: Coastal Ocean Dynamics - Gordon Research Conference 2025
+    date: June 7-13, 2025
+    location: New London, New Hampshire
+    title: Haitian Mangroves' Climate Resilience and Performance for Storm Surge Attenuation
+    type: Seminar Talk
+  - name: Caribbean Studies Association (CSA) Conference 2024
+    date: June 3-7, 2024
+    location: Rodney Bay, Saint-Lucia
+    title: "Constructing Just Futures: Navigating Climate Adaptation, Infrastructure, and Resource Stewardship in the Caribbean \nMangrove Forests as Natural Coastal Defense in Haiti."
+    type: Panel Presentation Participant
+  - name: Coastal Ocean Dynamics - Gordon Research Conference 2023
+    date: June 18-23, 2023
+    location: Smithfield, Rhode Island
+    title: Remote Sensing Analysis of Mangrove Resilience and Cover Change in the Grand-Pierre Bay, Haiti
+    type: Poster Presentation
+  
+
+professional_experience:
+
+research_experience:
+
+teaching_experience:
+
+technical_skills:
+
+awards_and_honors:
+
+service_and_leadership:
+
+languages:
