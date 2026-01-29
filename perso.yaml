@@ -77,7 +77,14 @@ professional_experience:
     - Participate in the development of the suxarray library.
     - Data analysis and visualization of hydrodynamic model outputs for water resources management and other applications.
     - Collaborate with interdisciplinary teams to support water resources projects.
-  
+  - position: Civil Engineering Intern
+    institution: Public Buildings and Housing Construction Unit (UCLBP) - Office of the Prime Minister, Haiti
+    date: June-August 2019
+    location: Pétionville, Haiti
+    supervisors: Ing. Ervé Pierre-Louis
+    responsibilities: 
+      - Inspected construction sites including Haitian Parliament Palace and Department of Finance Headquarters as part of Port-au-Prince Administrative District project.
+
 
 research_experience:
   - position: Graduate Student Researcher 
@@ -145,20 +152,40 @@ technical_skills:
     - Geospatial analysis (GDAL, rasterio, geopandas)
 
 awards_and_honors:
-  - name:
-    institution:
-    date:
+  - name: Outstanding Graduate Student Instructor Award
+    institution: University of California, Berkeley
+    date: Spring 2023
+  - name: Hearts to Humanity Scholarship
+    institution: University of California, Berkeley
+    date: Spring 2022
+  - name: Rober and Phyllis Dean Fellowship
+    institution: University of California, Berkeley
+    date: Fall 2021
+  - name: National Grid GreenDependence Scholarship
+    institution: Stony Brook University
+    date: Spring 2020
 
 certifications:
-  - name:
-    institution:
-    date:
+  - name: URSSI Research Software + Open Science Summer School
+    institution: University of Alaska Fairbanks
+    date: August 2025
+  - name: Summer Enrichment Program
+    institution: New York City Department of Buildings
+    date: Summer 2020
 
 service_and_leadership:
-  - position:
-    organization:
-    date:
-    responsibilities:
+  - position: Founding Member
+    organization: Caribbean Coalition at Berkeley
+    date: August 2024 - August 2025
+    responsibilities: "Co-founded student org for Caribbean scholars at UC Berkeley, promoting academic and cultural community. \nOrganizer at the Imagining Caribbean Futures Symposium - April 10-11, 2025."
+  - position: Group Coordinator 
+    organization: Environmental Fluid Mechanics and Hydrology Group at UC Berkeley
+    date: Fall 2022 - Spring 2024
+    responsibilities: Organized research group meetings and presentations, facilitated academic discussions.
+  - position: Volunteer Mentor
+    organization: Education Haiti
+    date: Spring 2018 - Summer 2019
+    responsibilities: Advised Haitian High School students on US and Canadian University applications and admission process.
 
 languages:
   - native:

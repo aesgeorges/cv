@@ -1,3 +1,4 @@
+// Document Formatting
 #set page(
     paper: "us-letter",
     margin: (
@@ -7,26 +8,30 @@
     )
   )
 #set par(justify: true, spacing: 0.5em)
+#set block(spacing: 0.8em)
 #set text(
     font: "Libertinus Serif",
     size: 11pt,
   )
 
+// Path to YAML to feed info into template
+#let config = "perso.yaml"
 
-
+// Identity Header
 #let identity(contents)= {
   align(
       center + horizon,
       text(weight: "bold", size: 20pt, contents.name + "\n") + 
       text(size: 12pt, contents.title + " | " + contents.affiliation) +
       text("\n") + link(contents.email1) + " | " + link(contents.email2) + " | " + link(contents.phone)
-
     )
 }
 
 #identity(
-  yaml("perso.yaml").identity
+  yaml(config).identity
 )
+
+// Each section imports relevant data from relevant dictionary key
 
 = Education
 #line(length: 100%)
@@ -48,7 +53,7 @@
 }
 
 #perso(
-  yaml("perso.yaml").education
+  yaml(config).education
 )
 
 = Publications
@@ -69,7 +74,7 @@
 }
 
 #publications(
-  yaml("perso.yaml").publications
+  yaml(config).publications
 )
 
 = Conference Presentations
@@ -86,7 +91,7 @@
 }
 
 #conferences(
-  yaml("perso.yaml").conference_presentations
+  yaml(config).conference_presentations
 )
 
 = Professional Experience
@@ -107,7 +112,7 @@
 
 
 #prof_experience(
-  yaml("perso.yaml").professional_experience
+  yaml(config).professional_experience
 )
 
 = Research Experience
@@ -127,7 +132,7 @@
 }
 
 #research_experience(
-  yaml("perso.yaml").research_experience
+  yaml(config).research_experience
 )
 = Teaching Experience
 #line(length: 100%)
@@ -143,8 +148,24 @@
 }
 
 #teaching_experience(
-  yaml("perso.yaml").teaching_experience
+  yaml(config).teaching_experience
 )
+
+= Certifications and Professional Development
+#line(length: 100%)
+
+#let certifications(contents) = {
+  for entry in contents {
+    [#text(weight: "bold", entry.name) | #text(entry.institution) #h(1fr) #text(entry.date)]
+    [\ ]
+  }
+}
+
+
+#certifications(
+  yaml(config).certifications
+)
+
 
 = Technical Skills 
 #line(length: 100%)
@@ -171,40 +192,38 @@
 }
 
 #skills(
-  yaml("perso.yaml").technical_skills
-)
-
-= Certifications and Professional Development
-#line(length: 100%)
-
-#let certifications(contents) = {
-
-}
-
-#certifications(
-  yaml("perso.yaml").certifications
+  yaml(config).technical_skills
 )
 
 = Awards and Honors
 #line(length: 100%)
 
 #let awards(contents) = {
-
+  for entry in contents {
+    [#text(weight: "bold", entry.name) | #text(entry.institution) #h(1fr) #text(entry.date)]
+    [\ ]
+  }
 }
 
 #awards(
-  yaml("perso.yaml").awards_and_honors
+  yaml(config).awards_and_honors
 )
 
 = Service and Leadership
 #line(length: 100%)
 
 #let leadership(contents) = {
-
+  for entry in contents {
+    [#text(weight: "bold", entry.position) | #text(entry.organization) #h(1fr) #text(entry.date)]
+    [\ #text(entry.responsibilities)]
+    [\ ]
+    [\ ]
+  }
 }
 
+
 #leadership(
-  yaml("perso.yaml").service_and_leadership
+  yaml(config).service_and_leadership
 )
 
 = Languages
@@ -222,11 +241,11 @@
     }
     [| #text(weight: "bold", "Basic: ")]
     for language in entry.basic {
-      [#text(language) ]
+      [#text(language)]
     }
   }
 }
 
 #languages(
-  yaml("perso.yaml").languages
+  yaml(config).languages
 )
