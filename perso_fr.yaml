@@ -1,0 +1,207 @@
+identity:
+  name: Alexandre Erich Sébastien Georges, Ph.D.
+  gender: m
+  title: Ingénieur Civil — Ressources en Eau
+  affiliation: California Department of Water Resources
+  email1: Alexandre.Georges@water.ca.gov
+  email2: aes.georges@gmail.com
+  phone: + 1 (631) 590-0387
+
+education:
+  - degree: Doctorat en Génie Civil et Environnemental
+    institution: University of California, Berkeley
+    duration: Janvier 2021 - Décembre 2025
+    details:
+      advisor: Prof. Mark T. Stacey
+      advisor_gender: m
+      dissertation: Remote Sensing and Hydrodynamic Modeling of Mangrove-Storm Surge Interactions in Haiti.
+      specialization: ""
+  - degree: M.S. en Génie Civil et Environnemental
+    institution: University of California, Berkeley
+    duration: Août 2020 - Décembre 2021
+    details:
+      specialization: Mécanique des fluides environnementaux et hydrologie.
+      advisor: ""
+      advisor_gender: m
+      dissertation: ""
+  - degree: B.E. en Génie Civil
+    institution: Stony Brook University, State University of New York
+    duration: Août 2016 - Mai 2020
+    details:
+      specialization: Ressources en eau et génie environnemental.
+      advisor: ""
+      advisor_gender: m
+      dissertation: ""
+
+publications:
+  - doi:
+    type: Article de journal
+    status: (En préparation)
+    title: Spatio-Temporal Change in Mangrove Health and Storm Surge Attenuation Impact in Grand-Pierre Bay, Haiti.
+    authors:
+      - name: Georges, A.
+        affiliation: "1"
+      - name: Stacey, M.
+        affiliation: "1"
+      - name: Ramsewak, D.
+        affiliation: "2"
+    affiliations:
+      - order: "1"
+        institution: University of California, Berkeley
+      - order: "2"
+        institution: University of Trinidad and Tobago
+
+conference_presentations:
+ # add the coding workshop?
+  - name: Coastal Ocean Dynamics - Gordon Research Conference 2025
+    date: 7-13 juin 2025
+    location: New London, New Hampshire
+    title: Haitian Mangroves' Climate Resilience and Performance for Storm Surge Attenuation
+    type: Conférence et présentation de poster
+  - name: Caribbean Studies Association (CSA) Conference 2024
+    date: 3-7 juin 2024
+    location: Rodney Bay, Saint-Lucia
+    title: "Constructing Just Futures: Navigating Climate Adaptation, Infrastructure, and Resource Stewardship in the Caribbean | \nMangrove Forests as Natural Coastal Defense in Haiti."
+    type: Participant à un panel
+  - name: Coastal Ocean Dynamics - Gordon Research Conference 2023
+    date: 18-23 juin 2023
+    location: Smithfield, Rhode Island
+    title: Remote Sensing Analysis of Mangrove Resilience and Cover Change in the Grand-Pierre Bay, Haiti
+    type: Présentation de poster
+  
+
+professional_experience:
+  - position: Ingénieur en Ressources en Eau
+    institution: California Department of Water Resources
+    date: Octobre 2025 - Présent
+    location: Sacramento, CA
+    supervisors: Kijin Nam, Ph.D., P.E.
+    supervisor_gender: m
+    responsibilities:
+     - Développer un outil d'inférence bayésienne pour estimer les sites d'éclosion et les effectifs de longfin smelt dans le delta Sacramento–San Joaquin, en utilisant les sorties du modèle hydrodynamique SCHISM, des simulations de suivi de particules (PTM) OceanTracker et un modèle statistique Stan.
+     - Participer au développement de l'outil suxarray.
+     - Analyse et visualisation de données issues de modèles hydrodynamiques pour la gestion des ressources en eau et autres applications.
+     - Collaboration avec des équipes pluridisciplinaires pour soutenir des projets en ressources en eau.
+  - position: Stagiaire en génie civil
+    institution: Public Buildings and Housing Construction Unit (UCLBP) - Office of the Prime Minister, Haiti
+    date: Juin-Août 2019
+    location: Pétionville, Haïti
+    supervisors: Ing. Ervé Pierre-Louis
+    supervisor_gender: m
+    responsibilities: 
+      - Inspection des chantiers, y compris le Palais du Parlement haïtien et le siège du Ministère des Finances, dans le cadre du projet du district administratif de Port-au-Prince.
+
+
+research_experience:
+  - position: Chercheur doctorant
+    institution: University of California, Berkeley | Environmental Fluid Mechanics and Hydrology Group
+    date: Janvier 2021 - Octobre 2025
+    location: Berkeley, CA
+    supervisors: Prof. Mark T. Stacey
+    supervisor_gender: m
+    responsibilities:
+      - Développement de méthodes de télédétection pour quantifier l'état de santé et la couverture des mangroves à partir d'images satellite Planet et d'un flux de travail Python.
+      - Mise en place du modèle hydrodynamique ADCIRC pour simuler les ondes de tempête générées par les ouragans dans le golfe de la Gonâve (Haïti).
+      - Réalisation d'analyses spatio-temporelles des interactions mangrove–onde de tempête en combinant télédétection et modélisation numérique.
+      - Collaboration à une étude d'adaptation à l'élévation du niveau de la mer pour San Rafael, CA, fournissant des analyses et visualisations géospatiales.
+      - Encadrement d'étudiants de premier et second cycle en télédétection et techniques d'analyse de données géospatiales.
+
+  - position: Assistant de recherche
+    institution: Stony Brook University | Environmental Engineering and Science Laboratory
+    date: Octobre 2019 - Mars 2020
+    location: Stony Brook, NY
+    supervisors: Sarah Lotfikatouli, Ph.D.
+    supervisor_gender: f
+    responsibilities:
+      - Réalisation d'expériences en laboratoire sur l'élimination de l'azote dans les systèmes de traitement des eaux usées in situ à l'aide de réacteurs à membrane (MBR).
+      - Analyse de la qualité de l'eau par spectrophotométrie, mesures d'oxygène dissous et énumération bactérienne.
+      - Évaluation de l'efficacité des filtres membranaires via des mesures d'angle de contact pour l'optimisation des MBR.
+
+
+teaching_experience:
+  - position: Assistant d'enseignement
+    course: Engineering Data Analysis (CE93)
+    institution: University of California, Berkeley
+    date: Printemps 2024
+    responsibilities: Animation des séances de laboratoire, tenue d'heures de bureau, surveillance des examens et gestion des outils pédagogiques.
+  - position: Assistant d'enseignement
+    course: Environmental Fluid Mechanics I (CE200A)
+    institution: University of California, Berkeley
+    date: Automne 2022
+    responsibilities: Animation des sessions de travaux dirigés, tenue d'heures de bureau, correction des travaux et gestion des outils pédagogiques.
+  - position: Lecteur / Assistant d'enseignement
+    course: Environmental Fluid Mechanics II (CE200B)
+    institution: University of California, Berkeley
+    date: Printemps 2022
+    responsibilities: Tenue d'heures de bureau, correction des travaux et gestion des outils pédagogiques.
+  - position: Lecteur
+    course: Environmental Fluid Mechanics I (CE200A)
+    institution: University of California, Berkeley
+    date: Automne 2021
+    responsibilities: Correction des devoirs et retour d'information aux étudiants.
+
+
+technical_skills:
+  programming:
+  - Python (numpy, pandas, xarray, scikit-learn, etc.)
+  - MATLAB
+  - scripts bash/shell
+  - QGIS et ArcGIS Pro
+  - gestion de versions Git
+  - LaTeX et Typst (ce CV a été produit avec Typst)
+  - environnements Linux et HPC
+  - HTML/CSS et expérience Django
+  modeling:
+  - ADCIRC
+  - SCHISM
+  - Delft3D FM
+  - OceanTracker
+  - traitement de données de télédétection (Planet, Landsat, Sentinel-2)
+  - analyse géospatiale (GDAL, rasterio, geopandas)
+
+awards_and_honors:
+  - name: Outstanding Graduate Student Instructor Award
+    institution: University of California, Berkeley
+    date: Printemps 2023
+  - name: Hearts to Humanity Scholarship
+    institution: University of California, Berkeley
+    date: Printemps 2022
+  - name: Rober and Phyllis Dean Fellowship
+    institution: University of California, Berkeley
+    date: Automne 2021
+  - name: National Grid GreenDependence Scholarship
+    institution: Stony Brook University
+    date: Printemps 2020
+
+certifications:
+  - name: URSSI Research Software + Open Science Summer School
+    institution: University of Alaska Fairbanks
+    date: Août 2025
+  - name: Summer Enrichment Program
+    institution: New York City Department of Buildings
+    date: Été 2020
+
+service_and_leadership:
+  - position: Membre fondateur
+    organization: Caribbean Coalition at Berkeley
+    date: Août 2024 - Août 2025
+    responsibilities: "Co-fondation d'une organisation étudiante pour les chercheurs caribéens à UC Berkeley, favorisant la communauté académique et culturelle. \nOrganisateur du symposium Imagining Caribbean Futures - 10-11 avril 2025."
+  - position: Coordinateur du groupe
+    organization: Environmental Fluid Mechanics and Hydrology Group at UC Berkeley
+    date: Automne 2022 - Printemps 2024
+    responsibilities: Organisation des réunions et présentations du groupe de recherche, facilitation des discussions académiques.
+  - position: Mentor bénévole
+    organization: Education Haiti
+    date: Printemps 2018 - Été 2019
+    responsibilities: Conseil aux lycéens haïtiens sur les candidatures et procédures d'admission aux universités américaines et canadiennes.
+
+languages:
+  - native:
+    - Français
+    - Créole haïtien
+    fluent:
+    - Anglais
+    proficient:
+    conversational:
+    basic:
+    - Espagnol
